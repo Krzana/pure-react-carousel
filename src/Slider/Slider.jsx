@@ -257,7 +257,7 @@ const Slider = class Slider extends React.Component {
       this.callCallback('onClickCapture', ev);
       return;
     }
-    ev.stopPropagation();
+    // ev.stopPropagation();
     ev.preventDefault();
     this.setState({ cancelNextClick: false });
     this.callCallback('onClickCapture', ev);
